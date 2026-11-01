@@ -1,0 +1,109 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: brown;
+    color:aquamarine;
+}
+
+
+header{
+    background-color: blue;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+nav ul{
+    background-color: aqua;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+}
+nav ul a{
+    color: darkred;
+    display: grid;
+}
+
+nav ul a:link{
+    text-decoration: none;
+}
+
+article h2{
+    background-color: blue;
+    text-align: center;
+    padding: 15px 0;
+}
+.kartyak{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
+article {
+    background-color: lightblue; 
+    padding: 20px;            
+}
+
+article h3 {
+    color: darkslateblue;
+}
+
+article p {
+    color: darkred;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.kartya img {
+   width: 100%;
+    max-width: 400px;  
+    height: 300px;     
+    object-fit: cover; 
+    display: block;
+    margin: 10px auto; 
+    border-radius: 6px; 
+}
+
+footer {
+    background-color: blue; 
+    text-align: center;     
+    padding: 15px 0;        
+    color: aquamarine;      
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 100%; 
+    }
+    .balkep, .jobbkep {
+        display: none; 
+    }
+    .kartyak {
+        grid-template-columns: 1fr; 
+    }
+    header {
+        font-size: 12px;
+        padding: 10px 0; 
+    }
+    nav ul {
+        font-size: 14px;
+        grid-template-columns: 1fr; 
+    }
+    footer {
+        font-size: 10px;
+        padding: 10px 0; 
+    }
+}
